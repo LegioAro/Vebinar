@@ -1,0 +1,96 @@
+/*=============================================================================================================
+
+                                                        adaptive
+
+=============================================================================================================*/
+
+@media (max-width: 1060px ) {
+    .footer {
+        &__block {
+            padding: 70px 10px;
+        }
+        &__logo {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        &__logo1 {
+            max-width: 222px;
+            max-height: 71px;
+        }
+    }
+}
+
+@media (max-width: 840px ) {
+    .footer {
+        &__block {
+            padding: 50px 10px;
+        }
+        &__logo {
+            max-width: 80px;
+            margin-right: 10px;
+        }
+        &__logo1 {
+            max-width: 182px;
+            max-height: 71px;
+        }
+    }
+}
+
+@media (max-width: 768px ) {
+    .header {
+        padding: 15px 10px;
+        flex-direction: column;
+        justify-content: inherit;
+        min-height: 100%;
+        box-sizing: border-box;
+        &__information {
+            flex-direction: column;
+            justify-content: inherit;
+        }
+        &__information-title {   
+            padding-right: 0;
+        }
+        &__text-time {
+            margin-top: 30px;
+            padding-left: 14px;
+        }
+        &__information-numberofseats {
+            width: 100%;
+            height: 100px;
+            margin-top: 40px;
+            box-sizing: border-box;
+        }
+        &__checkin  {
+            padding-top: 40px;
+        }
+        &__checkin-link {
+            box-sizing: border-box;
+            padding: 19px 30px;
+            width: 100%;
+            margin: 0 0 40px;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        &__block {
+            box-sizing: border-box;
+            width: 100%;
+            border-right: none;
+            padding: 30px 10px 0;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__block:last-child {
+            margin-bottom: 30px;
+        }
+        &__logo {
+            max-width: 40px;
+            margin-right: 20px;
+        }
+        &__logo1 {
+            max-width: 100px;
+            max-height: 71px;
+        }
+    }
+}

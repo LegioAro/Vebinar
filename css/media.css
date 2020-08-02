@@ -1,0 +1,114 @@
+/*=============================================================================================================
+
+                                                        adaptive
+
+=============================================================================================================*/
+@media (max-width: 1060px) {
+  .footer__block {
+    padding: 70px 10px;
+  }
+  .footer__logo {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  .footer__logo1 {
+    max-width: 222px;
+    max-height: 71px;
+  }
+}
+
+@media (max-width: 840px) {
+  .footer__block {
+    padding: 50px 10px;
+  }
+  .footer__logo {
+    max-width: 80px;
+    margin-right: 10px;
+  }
+  .footer__logo1 {
+    max-width: 182px;
+    max-height: 71px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header__information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+  .header__information-title {
+    padding-right: 0;
+  }
+  .header__text-time {
+    margin-top: 30px;
+    padding-left: 14px;
+  }
+  .header__information-numberofseats {
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header__checkin {
+    padding-top: 40px;
+  }
+  .header__checkin-link {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 19px 30px;
+    width: 100%;
+    margin: 0 0 40px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__block {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    border-right: none;
+    padding: 30px 10px 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__block:last-child {
+    margin-bottom: 30px;
+  }
+  .footer__logo {
+    max-width: 40px;
+    margin-right: 20px;
+  }
+  .footer__logo1 {
+    max-width: 100px;
+    max-height: 71px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

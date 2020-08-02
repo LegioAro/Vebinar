@@ -1,0 +1,184 @@
+@import 'global';
+@import 'fonts';
+@import 'keyframes';
+
+
+/*=============================================================================================================
+
+                                                        header
+
+=============================================================================================================*/
+
+.header {
+    background-image: url(../image/Europe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7.7% 7.7% 3.1% 7.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    box-sizing: border-box;
+    &__information {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__information-title {   
+        padding-right: 10px;;
+    }
+    &__title {
+        font-size: calc(24px + 46 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(30px + 47 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__title-size {
+        text-transform: initial;
+    }
+    &__title-color {
+        color: #f0e353;
+    }
+    &__text {
+        font-size: calc(18px + 18 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(22px + 22 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 300;
+    }
+    &__text-time {
+        font-size: calc(20px + 30 * ((100vw - 320px) / (1920 - 320)));
+        border-left: 8px solid #f0e353;
+        margin-top: 107px;
+        padding-left: 14px;
+    }
+    &__text-time-size {
+        font-size: calc(14px + 16 * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__information-numberofseats {
+        width: 19.27%;
+        border: 2px solid #ffffff;
+        position: relative;
+    }
+    &__numberofseats-border {
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 32.4%;
+        left: 0;
+    }
+    &__numberofseats-number {
+        position: absolute;
+        left: 50%;
+        top: 33.4%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: calc(24px + 156 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 100;
+    }
+    &__numberofseats-text {
+        position: absolute;
+        text-align: center;
+        font-size: calc(14px + 22 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 300;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    &__checkin  {
+        align-self: center;
+        text-align: center;
+        padding-top: 10px;
+    }
+    &__checkin-link {
+        color: #f0e353;
+        font-size: calc(18px + 32 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(18px + 27 * ((100vw - 320px) / (1920 - 320)));
+        text-transform: uppercase;
+        padding: 23px 114px;
+        border: #f0e353 2px solid;
+        display: block;
+        margin: 0 0 39px;
+        transition: .3s;
+    }
+    &__checkin-link:hover {
+        background-color: #f0e353;
+        color: #ffffff;
+    }
+    &__checkin-text {
+        font-size: calc(14px + 6 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(16px + 6 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 100;
+        max-width: 100%;
+    }
+    &__checkin-arrow {
+        width: 94px;
+        height: 47px;
+        position: relative;
+        display: flex;
+        margin: 32px auto 0;
+        animation: flashing 1s linear infinite;
+    }
+    &__checkin-arrow::before, &__checkin-arrow::after {
+        content: '';
+        height: 1px;
+        width: 59.5%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+    }
+    &__checkin-arrow::before {
+        left: 0;
+        transform: rotate(45deg);
+    }
+    &__checkin-arrow::after{
+        right: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+/*=============================================================================================================
+
+                                                        footer
+
+=============================================================================================================*/
+
+.footer {
+    display: flex;
+    border-top: 1px solid #ffffff;
+    background-color: #55719f;
+    &__block {
+        width: 50%;
+        border-right: 1px solid #ffffff;
+        display: flex;
+        padding: 105px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__block:last-child {
+        border-right: 0;
+    }
+    &__logo {
+        max-width: 140px;
+        margin-right: 46px;
+    }
+    &__logo1 {
+        max-width: 322px;
+        max-height: 71px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: calc(18px + 17 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(18px + 17 * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+    }
+    &__border {
+        height: 3px;
+        width: 100%;
+        background-color: #ffffff;
+        margin: 5px 0;
+    }
+    &__text {
+        font-size: calc(14px + 8 * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(16px + 6 * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+@import 'media';
